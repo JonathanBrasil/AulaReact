@@ -1,20 +1,27 @@
 import React from "react";
+import { Button, Box, Paper } from "@material-ui/core";
 import './Home.css';
+import { AddBox } from "@material-ui/icons";
 
-function Home(){
-    return(
+function Home() {
+    return (
         <>
-
-        <h1 className="titulo">Home</h1>
-        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png' alt="img tela inicial" className="logo"></img>
-
-
-
-
+            <Paper>
+                <Box p={2}>
+                    <Box display='flex' justifyContent='center'>
+                        <h1> Título</h1>
+                        <img alt='rowlet' style={{ width: "100%", height: "100%" }} src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-legends/f/ff/Rowlet.png" />
+                    </Box>
+                    <Box display='flex' justifyContent='center' p={2}>
+                        <Button>Texto 1</Button>
+                        <Button>Texto 2</Button>
+                    </Box>
+                </Box>
+            </Paper>
         </>
 
 
- );
+    );
 }
 
 export default Home;
