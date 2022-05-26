@@ -1,23 +1,29 @@
 import React from "react";
-import { Button, Box, Paper } from "@material-ui/core";
+import { Button, Box, Typography, Grid } from "@material-ui/core";
 import './Home.css';
 import { AddBox } from "@material-ui/icons";
 
 function Home() {
     return (
         <>
-            <Paper>
-                <Box p={2}>
-                    <Box display='flex' justifyContent='center'>
-                        <h1> Título</h1>
-                        <img alt='rowlet' style={{ width: "100%", height: "100%" }} src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-legends/f/ff/Rowlet.png" />
+            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#FBFAD9 " }}>
+                <Grid alignItems="center" item xs={6}>
+                    <Box paddingX={20} >
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "black", fontWeight: "bold" }}>Seja bem vindo(a)!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "black", fontWeight: "bold" }}>expresse aqui os seus pensamentos e opiniões!</Typography>
                     </Box>
-                    <Box display='flex' justifyContent='center' p={2}>
-                        <Button>Texto 1</Button>
-                        <Button>Texto 2</Button>
+                    <Box display="flex" justifyContent="center">
+                        <Box marginRight={1}>
+                        </Box>
+                        <Button variant="outlined" style={{ borderColor: "black", backgroundColor: "#FBFAD9 ", color: "black" }}>Ver Postagens</Button>
                     </Box>
-                </Box>
-            </Paper>
+                </Grid>
+                <Grid item xs={6} >
+                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
+                </Grid>
+                <Grid xs={12} style={{ backgroundColor: "white" }}>
+                </Grid>
+            </Grid>
         </>
 
 

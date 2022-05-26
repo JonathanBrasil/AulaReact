@@ -1,7 +1,9 @@
-
+.centro{
+    background-color: #FBFAD9  ;
+}
 .menu {
     text-transform: uppercase;
-    color: rgba(55, 55, 55, 0.8);
+    color: #040526 (55, 55, 55, 0.8);
     display: inline-block;
     cursor: pointer;
     pointer-events: none;
@@ -33,7 +35,7 @@
 .spacer:before {
     content: "";
     position: absolute;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #D9EBFB;
     height: 1px;
     width: 0%;
     transition: width 0.25s ease;
@@ -55,7 +57,7 @@ span {
 }
 
 .item:hover span {
-    color: #ff0000;
+    color: #D9EBFB;
 }
 
 .menu:hover .spacer:before {
