@@ -23,13 +23,13 @@ function Footer() {
 
           {/* mensagem de copyright */}
 
-          <Box style={{ backgroundColor: "#C9C8AE", height: "60px" }}>
+          <Box style={{ display: 'grid', alignContent:'center', backgroundColor: "#E3E4E7" }}>
             <Box paddingTop={1}>
-              <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2020 Copyright:</Typography>
+              <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "#2f3640" }} >© 2020 Copyright:</Typography>
             </Box>
             <Box>
-              <a target="_blank" href="https://brasil.generation.org">
-                <Typography variant="subtitle2" gutterBottom style={{ color: "white" }} align="center">brasil.generation.org</Typography>
+              <a className='sdeco' target="_blank" rel="noreferrer" href="https://brasil.generation.org">
+                <Typography variant="subtitle2" gutterBottom style={{ color: "#2f3640" }} align="center">brasil.generation.org</Typography>
               </a>
             </Box>
           </Box>

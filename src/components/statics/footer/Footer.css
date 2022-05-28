@@ -1,14 +1,11 @@
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     width: 100%;
     text-transform: uppercase;
     color: rgba(55, 55, 55, 0.8);
     display: inline-block;
     cursor: pointer;
     pointer-events: none;
-    margin: 10px;
     padding: 10px;
 
 }
@@ -36,7 +33,7 @@
 .spacer:before {
     content: "";
     position: absolute;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #c23616;
     height: 1px;
     width: 0%;
     transition: width 0.25s ease;
@@ -57,7 +54,7 @@ span {
 }
 
 .item:hover span {
-    color: #D9DAFB;
+    color: #c23616;
 }
 
 .menu:hover .spacer:before {
@@ -152,13 +149,23 @@ span {
 
 
 .footer{
-    background-color: #FBFAD9 ;
+    background-color: #dcdde1 ;
+
 }
 
 .footer2{
+    
     display: flex;
-    height: 60px;
-    background-color: #C9C8AE;
+    height: 70px;
     align-items: center;
     justify-content: center;
+
+}
+
+.sdeco {
+    text-decoration: none;
+}
+
+.sdeco:hover {
+    text-decoration: none;
 }
