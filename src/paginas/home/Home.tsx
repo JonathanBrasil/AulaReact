@@ -6,7 +6,7 @@ import './Home.css';
 function Home() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className="fundo">
+            <Grid container direction="row" justifyContent="center" alignItems="center" >
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h2" gutterBottom color="textPrimary" component="h2" align="center" style={{ color: "#c23616", fontWeight: "bolder" }}>WELCOME</Typography>
@@ -18,7 +18,7 @@ function Home() {
                         <Button variant="outlined" className="botao">Start</Button>
                     </Box>
                 </Grid>
-                <Grid item xs={6} className='fundoImg'>
+                <Grid item xs={6} className='fundoHome'>
                 </Grid>
 
                 <Grid item xs={12} className='postagens'>

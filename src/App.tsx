@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './paginas/home/Home';
+import Cadastro from './paginas/cadastro/Cadastro';
 import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -20,7 +21,7 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
-            {/* <Route path="/cadastro" element={<CadastroUsuario />} /> */}
+            <Route path="/cadastro" element={<Cadastro />} />
           </Routes>
         </div>
         <Footer />

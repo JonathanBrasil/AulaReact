@@ -14,8 +14,8 @@
     background-color: #dcdde1 ;
 }
 
-.fundoImg{
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2018/01/black-smoke-5.png') !important;
+.fundoHome{
+    background-image: url(https://www.onlygfx.com/wp-content/uploads/2018/01/black-smoke-5.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
