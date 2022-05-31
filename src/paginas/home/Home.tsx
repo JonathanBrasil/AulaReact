@@ -6,7 +6,7 @@ import './Home.css';
 function Home() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#dcdde1 " }}>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className="fundo">
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h2" gutterBottom color="textPrimary" component="h2" align="center" style={{ color: "#c23616", fontWeight: "bolder" }}>WELCOME</Typography>
@@ -15,14 +15,17 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant="outlined" style={{ borderColor: "#c23616", backgroundColor: "#dcdde1 ", color: "black" }}>Start</Button>
+                        <Button variant="outlined" className="botao">Start</Button>
                     </Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <img src="https://clipart.info/images/ccovers/1559831095red-smoke-png-6.png" alt="" width='600px'/>
+                <Grid item xs={6} className='fundoImg'>
                 </Grid>
-               
-                
+
+                <Grid item xs={12} className='postagens'>
+
+                </Grid>
+
+
             </Grid>
         </>
 

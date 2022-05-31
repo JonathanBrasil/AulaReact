@@ -1,38 +1,32 @@
 import React from 'react'
 import "./Footer.css"
 import { Box, Typography, Grid } from '@material-ui/core'
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function Footer() {
   return (
     <>
-
-
-      <Grid className='footer' container direction="row" justifyContent="center" alignItems="center">
+      <Grid container direction="row" justifyContent="center" alignItems="center">
         <Grid alignItems="center" item xs={12}>
-
-          {/* MENU MINHAS REDES */}
-          <div className="menu">
-            <div className="label">Minhas redes:</div>
-            <div className="spacer"></div>
-            <div className="item"><span>Twitter</span></div>
-            <div className="item"><span>Instagram</span></div>
-            <div className="item"><span>GitHub</span></div>
-            <div className="item"><span>Linkedin</span></div>
-            <div className="item"><span>Gmail</span></div>
-          </div>
-
-          {/* mensagem de copyright */}
-
-          <Box style={{ display: 'grid', alignContent:'center', backgroundColor: "#E3E4E7" }}>
-            <Box paddingTop={1}>
-              <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "#2f3640" }} >© 2020 Copyright:</Typography>
+          <Box className='rodape'>
+            <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
+              <Typography align="center" gutterBottom className='texto'>Siga-me nas redes sociais </Typography>
             </Box>
-            <Box>
-              <a className='sdeco' target="_blank" rel="noreferrer" href="https://brasil.generation.org">
-                <Typography variant="subtitle2" gutterBottom style={{ color: "#2f3640" }} align="center">brasil.generation.org</Typography>
+            <Box display="flex" alignItems="center" justifyContent="center">
+              <a href="https://www.facebook.com/generationbrasil" target="_blank">
+                <FacebookIcon className='icone' />
+              </a>
+              <a href="https://www.instagram.com/generationbrasil/" target="_blank">
+                <InstagramIcon className='icone' />
+              </a>
+              <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                <LinkedInIcon className='icone' />
               </a>
             </Box>
           </Box>
+
 
         </Grid>
       </Grid>
