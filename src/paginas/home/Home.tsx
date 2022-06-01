@@ -1,9 +1,12 @@
 import React from "react";
 import { Button, Box, Typography, Grid } from "@material-ui/core";
 import './Home.css';
+import TabPostagem from "../../components/postagens/tabpostagens/TabPostagem";
 
 
 function Home() {
+
+
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" >
@@ -22,7 +25,7 @@ function Home() {
                 </Grid>
 
                 <Grid item xs={12} className='postagens'>
-
+                    <TabPostagem/>
                 </Grid>
 
 
