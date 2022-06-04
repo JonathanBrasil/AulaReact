@@ -1,12 +1,14 @@
-.centro{
+.container-menu{
     background-color: #dcdde1  ;
-    height: 80px;
+    display: flex;
 
 }
 .menu {
     text-transform: uppercase;
     color: #040526 (55, 55, 55, 0.8);
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     pointer-events: none;
     margin: 10px;
@@ -19,7 +21,9 @@
 }
 
 .label {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     pointer-events: all;
 }
@@ -52,6 +56,8 @@
     opacity: 0;
     transition: opacity 0.5s ease, top 0.5s ease;
     transition-delay: 0;
+    text-decoration: none;
+    
 }
 
 span {
@@ -150,4 +156,8 @@ span {
 
 .menu:hover .item:nth-child(10) {
     transition-delay: 0.7s;
+}
+
+.text-decorator-none{
+    text-decoration: none !important;
 }
