@@ -1,3 +1,23 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.fundo-listapostagem{
+
+    background-color: #dcdde1 ;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-postagem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tamanho{
+    height: 600px;
+}
