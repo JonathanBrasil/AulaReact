@@ -14,22 +14,20 @@ import CadastroTema from './components/temas/cadastrotema/CadastroTema';
 import DeletarTema from './components/temas/deletetema/DeletarTema';
 import { Provider } from 'react-redux';
 import store from './store/store';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './App.css';
-
-
-
-
 
 function App() {
   return (
     <Provider store={store}>
-
-    <Router>
-      <Navbar />
-        <div style={{ minHeight: '100vh'}}>
+      <ToastContainer />
+      <Router>
+        <Navbar />
+        <div style={{ minHeight: '100vh' }}>
           <Routes>
-            <Route path="/" element={<Login />} />   
+            <Route path="/" element={<Login />} />
 
             <Route path="/login" element={<Login />} />
 
@@ -55,7 +53,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
-    </Router>
+      </Router>
     </Provider>
 
   );

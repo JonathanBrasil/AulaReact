@@ -3,8 +3,68 @@ import { Typography, Button, Box, Card, CardActions, CardContent } from "@materi
 import './DeletarPostagem.css';
 import Postagem from '../../../model/Postagem';
 import { buscaId, deleteId } from '../../../services/Service';
+import { useNavigate, useParams } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
+import Tema from '../../../model/Tema';
+import { toast } from 'react-toastify';
+
 
 function DeletarPostagem() {
+
+    let history = useNavigate();
+
+    const { id } = useParams<{ id: string }>();
+
+    const [token, setToken] = useLocalStorage('token');
+
+    const [post, setPosts] = useState<Postagem>()
+
+    useEffect(() => {
+        if (token === "") {
+            toast.error('Você precisa estar logado', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+        }
+    }, [token])
+
+    useEffect(() => {
+        if (id !== undefined) {
+            findById(id)
+        }
+    }, [id])
+
+    async function findById(id: string) {
+        buscaId(`/postagem/${id}`, setPosts, {
+            headers: {
+                'Authorization': token
+            }
+        })
+    }
+
+    async function sim() {
+        history('/posts')
+
+        try {
+            await deleteId(`/postagem/${id}`, {
+                headers: {
+                    'Authorization': token
+                }
+            });
+            alert('Postagem deletada com sucesso');
+        } catch (error) {
+            alert('Erro ao deletar');
+        }
+    }
+
+    function nao() {
+        history('/posts')
+    }
 
     return (
         <>
